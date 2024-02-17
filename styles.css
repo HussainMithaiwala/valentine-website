@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8d7da; /* Light pink background color */
+    color: #721c24; /* Dark red text color */
+}
+
+.container {
+    text-align: center;
+    margin-top: 20vh; /* Vertical centering */
+}
+
+.gif-container img {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 20%;
+    width: 20%;
+}
+
+h1 {
+    color: #c92a2a; /* Red text color for the heading */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff69b4; /* Hot pink button color */
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #dc3545; /* Dark red button color on hover */
+}
+
+#noButton.moved {
+    position: absolute;
+    top: calc(50vh - 25px);
+    left: calc(50vw - 50px);
+}
