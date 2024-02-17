@@ -12,6 +12,13 @@ noButton.addEventListener('mouseover', () => {
 });
 
 noButton.addEventListener('click', () => {
+    const buttonWidth = noButton.offsetWidth;
+    const buttonHeight = noButton.offsetHeight;
+    const maxX = window.innerWidth - buttonWidth;
+    const maxY = window.innerHeight - buttonHeight;
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+    noButton.style.transform = `translate(${randomX}px, ${randomY}px)`;
     noButton.classList.add('moved');
 });
 
